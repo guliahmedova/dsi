@@ -1,0 +1,59 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    box-shadow: $main-shadow;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        .big-text {
+            font-size: 48px;
+            font-weight: 900;
+        }
+        .small-texts {
+            span {
+                display: block;
+                text-transform: uppercase;
+                color: gray;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.2rem;
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                i {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .left-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        li {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 425px) {
+}
+@media only screen and (max-width: 411px) {
+}

@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: space-between;
+
+    .footer-card {
+        .logo {
+            display: flex;
+            align-items: center;
+            .big-text {
+                font-size: 45px;
+                font-weight: 900;
+            }
+            .small-texts {
+                span {
+                    display: block;
+                    text-transform: uppercase;
+                    color: gray;
+                    font-size: 10px;
+                }
+            }
+        }
+        .first-card-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p {
+            color: gray;
+        }
+        .second-card-title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        ul {
+            margin-top: 1rem;
+            li {
+                color: gray;
+                margin: 0.1rem 0;
+            }
+        }
+
+        .footer-img {
+            height: auto;
+            width: auto;
+            object-fit: cover;
+            filter: contrast(100%);
+        }
+    }
+}
+
+.copy-right{
+    background-color: $main-red;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0;
+}

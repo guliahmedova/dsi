@@ -1,0 +1,35 @@
+.home-product-service {
+    padding: 2rem 4rem;
+    width: 100%;
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 700;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.5rem;
+        .card {
+            height: 100%;
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 1rem;
+                filter: contrast(100%);
+            }
+            h2 {
+                color: $main-red;
+                font-weight: 600;
+                font-size: 28px;
+                margin-bottom: 1rem;
+            }
+            p {
+                width: 319px;
+                height: 108px;
+            }
+        }
+    }
+}
