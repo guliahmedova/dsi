@@ -1,59 +1,106 @@
-.navbar {
+.header {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
     box-shadow: $main-shadow;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
 
     .logo {
         display: flex;
         align-items: center;
+        text-decoration: none;
         .big-text {
             font-size: 48px;
             font-weight: 900;
         }
         .small-texts {
+            margin-top: 4.3px;
             span {
                 display: block;
                 text-transform: uppercase;
                 color: gray;
                 font-size: 10px;
+                line-height: 1.3;
             }
         }
     }
-
-    .navbar-menu {
+    .custom-navbar {
         display: flex;
-        gap: 2rem;
-        font-size: 1.2rem;
-        li {
-            a {
-                display: flex;
-                align-items: center;
-                gap: 0.2rem;
-                i {
-                    font-weight: 800;
-                }
+        align-items: center;
+        a {
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $main-black;
+            font-size: 1.125rem;
+            &:hover {
+                color: gray;
             }
         }
     }
-
-    .left-menu {
+    .icons {
         display: flex;
         align-items: center;
         gap: 1rem;
-        li {
-            font-size: 1.4rem;
+        img {
+            object-fit: cover;
+            filter: contrast(150%);
+        }
+    }
+    .toggle-btn {
+        display: none;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            object-fit: cover;
+            filter: contrast(150%);
         }
     }
 }
 
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 600px) {
-}
-@media only screen and (max-width: 425px) {
-}
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 1013px) {
+    .header {
+        position: relative;
+        .custom-navbar {
+            display: none;
+        }
+        .icons {
+            display: none;
+        }
+        .custom-navbar-mobile {
+            position: absolute;
+            display: block;
+            transition: .5s all ease-in-out;
+            text-align: center;
+            background-color: white;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: auto;
+            padding: 0% 3rem;
+            a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+                text-decoration: none;
+                color: $main-black;
+                font-size: 1.125rem;
+                &:hover {
+                    color: gray;
+                }
+            }
+        }
+
+        .toggle-btn{
+            position: absolute;
+            display: block;
+            right: 20px;
+        }
+    }
 }

@@ -4,6 +4,7 @@
     border: 0;
     font-size: 100%;
     font: inherit;
+    vertical-align: baseline;
     text-decoration: none;
     transition: 0.2s linear;
     outline: none;
@@ -83,7 +84,4 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
-}
-a{
-    color: black;
 }

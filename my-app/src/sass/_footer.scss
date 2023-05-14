@@ -1,56 +1,39 @@
 .footer {
-    display: flex;
-    padding: 2rem 4rem;
-    align-items: center;
-    margin-top: 4rem;
-    justify-content: space-between;
-
-    .footer-card {
-        .logo {
-            display: flex;
-            align-items: center;
-            .big-text {
-                font-size: 45px;
-                font-weight: 900;
-            }
-            .small-texts {
-                span {
-                    display: block;
-                    text-transform: uppercase;
-                    color: gray;
-                    font-size: 10px;
-                }
-            }
+    .logo {
+        display: flex;
+        align-items: center;
+        .big-text {
+            font-size: 45px;
+            font-weight: 900;
         }
-        .first-card-title {
-            font-size: 18px;
-            font-weight: 700;
-        }
-        p {
-            color: gray;
-        }
-        .second-card-title {
-            font-size: 24px;
-            font-weight: 700;
-        }
-        ul {
-            margin-top: 1rem;
-            li {
+        .small-texts {
+            span {
+                display: block;
+                text-transform: uppercase;
                 color: gray;
-                margin: 0.1rem 0;
+                font-size: 10px;
             }
         }
+    }
 
-        .footer-img {
-            height: auto;
-            width: auto;
-            object-fit: cover;
-            filter: contrast(100%);
+    .footer-img {
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        filter: contrast(100%);
+    }
+
+    .second-column{
+        h6{
+            margin-bottom: 2.5rem;
+        }
+        p{
+            line-height: 1;
         }
     }
 }
 
-.copy-right{
+.copy-right {
     background-color: $main-red;
     color: whitesmoke;
     text-align: center;

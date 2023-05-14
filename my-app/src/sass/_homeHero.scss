@@ -1,13 +1,17 @@
 .home-hero {
     display: flex;
     padding: 0 4rem;
-    padding-top: 4.5rem;
-    justify-content: space-between;
-
+    margin: 0% auto;
+    gap: 4rem;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh - 93.6px);
     .left-side {
         h1 {
-            font-size: 48px;
+            font-size: 3rem;
             font-weight: 900;
+            margin: 0%;
+            padding: 0%;
             span {
                 color: #ff464f;
             }
@@ -19,10 +23,90 @@
     }
     .right-side {
         img {
-            width: 562.97px;
-            height: 381.61px;
+            max-width: 100%;
             object-fit: cover;
             filter: contrast(100%);
         }
+    }
+}
+
+.home-hero > * {
+    flex: 1 1 25em;
+}
+
+@media only screen and (max-width: 1013px) {
+    .home-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+        .right-side {
+            margin-top: 5%;
+        }
+        .left-side {
+            text-align: center;
+            h1 {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    .home-hero > * {
+        flex: 1 1 20em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home-hero {
+        gap: 2rem;
+        .left-side {
+            text-align: center;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+    .home-hero > * {
+        flex: 1 1 15em;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .home-hero {
+        gap: 1rem;
+        .left-side {
+            text-align: center;
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .home-hero > * {
+        flex: 1 1 10em;
+    }
+}
+@media only screen and (max-width: 327px) {
+    .home-hero {
+        gap: 0.4rem;
+        .left-side {
+            text-align: center;
+            h1 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .home-hero > * {
+        flex: 1 1 5em;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .home-hero {
+        gap: 0.5rem;
+        .left-side {
+            text-align: center;
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .home-hero > * {
+        flex: 1 1 9em;
     }
 }
