@@ -632,7 +632,7 @@ h6 {
   z-index: -1;
   height: 100vh;
 }
-.technology-hero .tech-menu li img{
+.technology-hero .tech-menu li img {
   max-width: 100%;
   object-fit: cover;
   filter: contrast(100%);
@@ -641,6 +641,134 @@ h6 {
   display: flex;
   justify-content: space-around;
 }
-.our-technolog{
+.our-technolog {
   margin-top: 20rem;
+}
+.header .about-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.header .about-dropdown .about-dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 12px 16px;
+  z-index: 2;
+  background-color: white;
+  top: 30px;
+  right: -70px;
+}
+.header .about-dropdown:hover .about-dropdown-menu {
+  display: block;
+}
+.about-hero {
+  background-color: #f7f7f7;
+}
+.about-hero img {
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.about-content h1 {
+  font-size: 2rem;
+}
+
+.about-content p span {
+  color: #ec323b;
+}
+.our-future {
+  background-color: #f7f7f7;
+}
+.our-future img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.our-future .img {
+  border: 0.1rem solid #ec323b;
+  padding: 0 1rem 1rem 1rem;
+}
+.our-future .title {
+  font-size: 2rem;
+}
+.our-future .title img {
+  width: 4rem;
+}
+.our-future .boxes {
+  display: flex;
+  flex-direction: column;
+}
+.our-future .boxes .box {
+  display: flex;
+  gap: 1rem;
+}
+.our-future .boxes .box img {
+  width: auto;
+  height: 2rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.our-future .boxes .box span h6 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.our-future .boxes .box span p {
+  font-size: 1.125rem;
+  color: gray;
+}
+.dsi-culture h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.dsi-culture {
+  background-color: #ec323b;
+  color: whitesmoke;
+}
+.dsi-culture img {
+  max-width: 100%;
+  width: auto;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+
+.contact-us img {
+  max-width: 100%;
+  width: auto;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.contact-us .contact-us-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-us .contact-us-menus li {
+  display: flex;
+  gap: 2rem;
+}
+.contact-us .contact-us-menus li span {
+  background-color: #eef3f1;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us .contact-us-menus li img {
+  height: 2rem;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.contact-us .contact-us-menus li strong{
+  font-size: 1.5rem;
+}
+.contact-us .contact-us-menus li p{
+  font-size: 1.125rem;
+}
+.contact-us .title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

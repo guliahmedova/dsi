@@ -25,7 +25,12 @@ const Navbar = () => {
                 <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='services'>Services</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='product'>Product</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='technology'>Technology</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='about'>About <BsChevronDown className='down-icon' /></NavLink>
+                <NavLink className={`about-dropdown ${({ isActive }) => isActive ? "linkActive" : ""}`} to='about'>
+                    About <BsChevronDown className='down-icon' />
+                    <div className="about-dropdown-menu">
+                        <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='ourteam'>Our Team</NavLink>
+                    </div>
+                </NavLink>
                 <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='client'>Client<BsChevronDown className='down-icon' /></NavLink>
                 <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='partner'>Partner</NavLink>
             </nav>

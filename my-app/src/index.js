@@ -11,8 +11,7 @@ import Technology from './components/pages/Technology';
 import Client from './components/pages/Client';
 import About from './components/pages/About';
 import Partner from './components/pages/Partner';
-
-
+import OurTeam from './components/pages/OurTeam';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />} >
@@ -23,6 +22,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='about' element={<About />} />
     <Route path='partner' element={<Partner />} />
     <Route path='client' element={<Client />} />
+    <Route path='ourteam' element={<OurTeam />} />
   </Route>
 ));
 
