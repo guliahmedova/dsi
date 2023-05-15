@@ -85,3 +85,7 @@ h6 {
 #__next {
     isolation: isolate;
 }
+::selection {
+    color: white;
+    background: $main-red;
+}

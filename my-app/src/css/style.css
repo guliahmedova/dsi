@@ -99,9 +99,14 @@ h6 {
   isolation: isolate;
 }
 
+::selection {
+  color: white;
+  background: red;
+}
+
 .linkActive {
   color: #1f2e35;
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -531,4 +536,111 @@ h6 {
   color: whitesmoke;
   text-align: center;
   padding: 1rem 0;
+}
+.services-hero {
+  padding: 0.5rem 4rem;
+  background-color: #f6f6f6;
+}
+.services-hero .heading {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 4rem;
+}
+.services-hero .heading span {
+  color: #ec323b;
+  font-weight: 600;
+}
+.our-services h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.our-services p span {
+  color: #ec323b;
+  font-weight: 600;
+}
+.our-services p {
+  font-weight: 500;
+}
+.our-services img {
+  object-fit: cover;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1013px) {
+  .our-services .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.product-hero {
+  background-color: #ec323b;
+  color: whitesmoke;
+}
+
+.our-product h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.our-product p {
+  font-weight: 500;
+}
+.our-product img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1013px) {
+  .our-product .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.technology-hero .tech-header .img-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.technology-hero .tech-header h1 {
+  color: whitesmoke;
+}
+.technology-hero .tech-header .custom-btn {
+  color: #ec323b;
+  background-color: whitesmoke;
+}
+.technology-hero .tech-header .img-box img {
+  max-width: 100%;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.technology-hero {
+  background-image: url("../../public/images/Vector-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.technology-hero .gray {
+  background-color: #f6f6f6;
+  clip-path: polygon(50% 0%, 100% 0, 100% 50%, 100% 57%, 55% 88%, 51% 88%, 0 64%, 0% 43%, 0 0);
+  position: absolute;
+  width: 100%;
+  top: 1%;
+  bottom: 0;
+  z-index: -1;
+  height: 100vh;
+}
+.technology-hero .tech-menu li img{
+  max-width: 100%;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.technology-hero .tech-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.our-technolog{
+  margin-top: 20rem;
 }
