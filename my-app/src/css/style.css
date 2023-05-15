@@ -761,14 +761,183 @@ h6 {
   object-fit: cover;
   filter: contrast(100%);
 }
-.contact-us .contact-us-menus li strong{
+.contact-us .contact-us-menus li strong {
   font-size: 1.5rem;
 }
-.contact-us .contact-us-menus li p{
+.contact-us .contact-us-menus li p {
   font-size: 1.125rem;
 }
-.contact-us .title{
+.contact-us .title {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.our-team-hero {
+  width: 100%;
+  background-color: #eef3f1;
+  border-bottom: #ec323b 1rem solid;
+}
+.our-team-hero .img-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.manajemen .title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manajemen .row {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.manajemen .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manajemen .card img {
+  width: 8rem;
+  max-width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: contrast(100%);
+}
+.manajemen .card h5 {
+  font-size: 1.125rem;
+  color: #ec323b;
+  font-weight: 700;
+}
+
+.manajemen .card h6 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.manajemen .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.manajemen .card ul li img {
+  height: 2rem;
+  width: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+.manajemen .card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0%;
+  padding: 0;
+}
+
+.consultant .title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.consultant {
+  background-color: #eef3f1;
+}
+.consultant .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consultant .card img {
+  width: 8rem;
+  max-width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: contrast(100%);
+}
+.consultant .card h5 {
+  font-size: 1.125rem;
+  color: #ec323b;
+  font-weight: 700;
+}
+
+.consultant .card h6 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.consultant .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.consultant .card ul li img {
+  height: 2rem;
+  width: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+.consultant .card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0%;
+  padding: 0;
+}
+
+.MobileSpecialist .title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MobileSpecialist .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MobileSpecialist .card img {
+  width: 8rem;
+  max-width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: contrast(100%);
+}
+.MobileSpecialist .card h5 {
+  font-size: 1.125rem;
+  color: #ec323b;
+  font-weight: 700;
+}
+
+.MobileSpecialist .card h6 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.MobileSpecialist .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.MobileSpecialist .card ul li img {
+  height: 2rem;
+  width: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+.MobileSpecialist .card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0%;
+  padding: 0;
 }
