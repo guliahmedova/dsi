@@ -1,8 +1,14 @@
-import React from 'react'
+import ClientHero from '../client/ClientHero'
+import ClientLineUp from '../client/ClientLineUp'
+import ClientSlider from '../client/ClientSlider'
 
 const Client = () => {
   return (
-    <div>Client</div>
+    <>
+      <ClientHero />
+      <ClientLineUp />
+      <ClientSlider />
+    </>
   )
 }
 

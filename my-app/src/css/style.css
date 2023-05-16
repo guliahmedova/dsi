@@ -941,3 +941,116 @@ h6 {
   margin: 0%;
   padding: 0;
 }
+.client-hero img{
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+
+.client-hero .row{
+  display: flex;
+  align-items: center;
+}
+
+.client-hero {
+  border-bottom: #ec323b solid 1.063rem;
+}
+
+
+.client-line-up-title .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+.client-line-up{
+  background-color: #f7f7f7
+}
+
+.client-line-up .img{
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.client-line-up p span{
+  color: #ec323b;
+  font-weight: 600;
+}
+.client-line-up .row{
+  display: flex ;
+  align-items: center;
+}
+
+.client-line-up-bank .row{
+  display: flex;
+  align-items: center;
+}
+.client-line-up-bank h1{
+  font-size: 2rem;
+}
+
+.client-line-up h1{
+  font-size: 2rem;
+}
+
+.client-line-up-bank p span{
+  color: #ec323b;
+  font-weight: 700;
+}
+
+.client-line-up-last-sec{
+  background-color: #f7f7f7;
+}
+.client-line-up-last-sec .row{
+  display: flex;
+  align-items: center;
+}
+
+.client-line-up-last-sec h1{
+  font-size: 2rem;
+}
+
+.client-line-up-last-sec p span{
+  color: #ec323b;
+  font-weight: 700;
+}
+
+.client-slider .carousel-inner .carousel-item img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  filter: contrast(100%);
+}
+.client-slider .carousel-inner .carousel-item .quatos{
+  width: auto;
+  height: 3rem;
+  max-width: 100%;
+  object-fit: cover;
+}
+.client-slider .carousel-inner .carousel-item p {
+  font-size: 1.5rem;
+  color: #373F41;
+}
+.client-slider .carousel-inner .carousel-item .little {
+  font-size: 1rem;
+  color: #30444E  ;
+}
+.client-slider .carousel-inner .carousel-item .row{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.client-slider .carousel-control-prev .carousel-control-prev-icon{
+  color: #ec323b !important;
+  background-color: #ec323b;
+}
+
+.client-slider .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.25rem;
+  font-weight: 500;
+}

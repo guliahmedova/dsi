@@ -16,7 +16,7 @@ const ContactUs = () => {
           <div className="col-lg-6 my-5">
             <ul className="contact-us-menus">
               <li>
-                <span><img src="./images/Vector.png" alt="" /></span>
+                <span><img src="./images/subtract.png" alt="" /></span>
                 <div>
                   <strong>Alamat</strong>
                   <p>Jl. Halim Perdana Kusuma, Ring Road <br /> Bangkalan, Madura, Jawa Timur.</p>
