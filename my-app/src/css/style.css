@@ -539,7 +539,24 @@ h6 {
 }
 .services-hero {
   padding: 0.5rem 4rem;
-  background-color: #f6f6f6;
+  position: relative;
+  background-image: url("../../public/images/Background\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-hero .box {
+  background-image: url("../../public/images/Background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  bottom: -1rem;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 .services-hero .heading {
   font-size: 3rem;
@@ -550,6 +567,11 @@ h6 {
 .services-hero .heading span {
   color: #ec323b;
   font-weight: 600;
+}
+@media only screen and (max-width: 1013px) {
+  .services-hero .heading{
+    font-size: 1.9rem;
+  }
 }
 .our-services h1 {
   font-size: 2rem;
@@ -1091,11 +1113,11 @@ h6 {
 .partner-line-up {
   position: relative;
 }
-.partner-line-up .left-circle{
+.partner-line-up .left-circle {
   position: absolute;
   top: 50%;
 }
-.partner-line-up .right-circle{
+.partner-line-up .right-circle {
   position: absolute;
   right: 0;
   top: 60%;
