@@ -1,8 +1,12 @@
-import React from 'react'
+import PartnerHero from "../partner/PartnerHero"
+import PartnersLineUp from "../partner/PartnersLineUp"
 
 const Partner = () => {
   return (
-    <div>Partner</div>
+    <>
+      <PartnerHero/>
+      <PartnersLineUp/>
+    </>
   )
 }
 
