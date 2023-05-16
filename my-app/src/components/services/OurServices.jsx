@@ -5,7 +5,7 @@ const OurServices = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h1 className="mb-3">Our Service   <img src="./images/Line 1.png" alt="" /></h1>
+                        <h1 className="mb-3">Our Service   <img className="my-3" src="./images/Line 1.png" alt="" /></h1>
                       
                         <p> <span>DSI’s </span> shared service solutions focus on the front-end based software development, designed specifically for the banking and financial sectors. We short-cut your front-liners to customers interaction process through a way that mediates your business process in a more direct communication means, in just a smile away from winning your customer’s trust. <br />
                             <br />

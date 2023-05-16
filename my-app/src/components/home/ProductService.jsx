@@ -1,4 +1,4 @@
-import productServiceDatas, { productServiceCards } from '../../datas/productServiceDatas';
+import productServiceDatas from '../../datas/productServiceDatas';
 
 const ProductService = () => {
 

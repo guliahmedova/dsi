@@ -1,4 +1,3 @@
-import React from 'react'
 
 const AboutHero = () => {
     return (
@@ -12,7 +11,7 @@ const AboutHero = () => {
                         </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 px-2">
-                        <img src="./images/aboutHeroLogo.png" alt="" />
+                        <img src="./images/Group 1317 2.svg" alt="" />
                     </div>
                 </div>
             </div>

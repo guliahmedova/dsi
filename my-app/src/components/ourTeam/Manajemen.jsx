@@ -9,7 +9,7 @@ const Manajemen = () => {
           <h5>{item.job}</h5>
           <h6>{item.name}</h6>
           <ul className='my-3'>
-            {item.sosialMedies.map(s => <li key={i}><img src={s} alt="" /></li>)}
+            {item.sosialMedies.map((s, index) => <li key={index + 22}><img src={s} alt="" /></li>)}
           </ul>
         </div>
       </div>

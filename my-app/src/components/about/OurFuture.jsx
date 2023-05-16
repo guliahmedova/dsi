@@ -8,9 +8,9 @@ const OurFuture = () => {
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 my-5">
                         <h1 className="mb-3 title">Our Future Prespective<img className='mt-3' src="./images/Line 1.png" alt="" /></h1>
-                        <div className="boxes">
+                        <div className="boxes"                            >
                             <div className="box">
-                                <img src="./images/Vector.png" alt="" />
+                                <img src="./images/Vector.svg" alt="" />
                                 <span>
                                     <h6>Vision</h6>
                                     <p>To become the leading application service provider <br /> (ASP) focusing on front-end application delivered <br /> for Indonesia’s banking and fi nancial industry.</p>
@@ -18,7 +18,7 @@ const OurFuture = () => {
                             </div>
 
                             <div className="box">
-                                <img src="./images/Vector (1).png" alt="" />
+                                <img src="./images/Vector (1).svg" alt="" />
                                 <span>
                                     <h6>Mission</h6>
                                     <p>To grow the business together with clients by <br /> providing enhanced services and wide delivery <br /> channel to end-users.</p>

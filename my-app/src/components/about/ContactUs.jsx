@@ -16,24 +16,24 @@ const ContactUs = () => {
           <div className="col-lg-6 my-5">
             <ul className="contact-us-menus">
               <li>
-                <span><img src="./images/subtract.png" alt="" /></span>
+                <span><img src="./images/Subtract.svg" alt="" /></span>
                 <div>
                   <strong>Alamat</strong>
                   <p>Jl. Halim Perdana Kusuma, Ring Road <br /> Bangkalan, Madura, Jawa Timur.</p>
                 </div>
               </li>
               <li>
-                <span><img src="./images/mail2.png" alt="" /></span>
+                <span><img src="./images/mail2.svg" alt="" /></span>
                 <div>
                   <strong>Email</strong>
-                  <p>sekolahku@sch.id</p>
+                  <a href="mailto:sekolahku@sch.id">sekolahku@sch.id</a>
                 </div>
               </li>
               <li>
-                <span><img src="./images/phone.png" alt="" /></span>
+                <span><img src="./images/phone.svg" alt="" /></span>
                 <div>
                   <strong>Telpon</strong>
-                  <p>(031) 3092223</p>
+                  <a href="tel:(031) 3092223">(031) 3092223</a>
                 </div>
               </li>
             </ul>

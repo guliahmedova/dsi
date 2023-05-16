@@ -7,40 +7,25 @@ const Navbar = () => {
 
     return (
         <header className='header'>
-
             <Link className="logo" to="/">
-                <div className="big-text">
-                    <span style={{ color: "#85171a" }}>D</span>
-                    <span style={{ color: "#dc2025" }}>S</span>
-                    <span style={{ color: "#feba08" }}>I</span>
-                </div>
-                <div className="small-texts">
-                    <span style={{ fontWeight: 500 }}>dwidasa</span>
-                    <span style={{ fontWeight: 600 }}>samsara</span>
-                    <span style={{ fontWeight: 700 }}>indonesia</span>
-                </div>
+                <img src="./images/aboutHeroLogo.png" alt="" className='logo' />
             </Link>
 
             <nav className={menuOpen ? "custom-navbar-mobile" : "custom-navbar"} onClick={() => setMenuOpen(false)}>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='services'>Services</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='product'>Product</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='technology'>Technology</NavLink>
-                <NavLink className={`about-dropdown ${({ isActive }) => isActive ? "linkActive" : ""}`} to='about'>
-                    About <BsChevronDown className='down-icon' />
-                    <div className="about-dropdown-menu">
-                        <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='ourteam'>Our Team</NavLink>
-                    </div>
-                </NavLink>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='client'>Client<BsChevronDown className='down-icon' /></NavLink>
-                <NavLink className={({ isActive }) => isActive ? "linkActive" : ""} to='partner'>Partner</NavLink>
+                <NavLink to='services' className={({ isActive }) => (isActive ? 'linkActive' : '')}>Services</NavLink>
+                <NavLink to='product' className={({ isActive }) => isActive ? "linkActive" : ""}>Product</NavLink>
+                <NavLink to='technology' className={({ isActive }) => isActive ? "linkActive" : ""}>Technology</NavLink>
+                <NavLink to='ourteam' className={({ isActive }) => isActive ? "linkActive" : ""}>Our Team</NavLink>
+                <NavLink to='about' className={({ isActive }) => isActive ? "linkActive" : ""}>About </NavLink>
+                <NavLink to='client' className={({ isActive }) => isActive ? "linkActive" : ""}>Client<BsChevronDown className='down-icon' /></NavLink>
+                <NavLink to='partner' className={({ isActive }) => isActive ? "linkActive" : ""}>Partner</NavLink>
             </nav>
 
             <div className='icons'>
-                <Link><img src="./images/home.png" alt="" /></Link>
-                <Link><img src="./images/mail.png" alt="" /></Link>
-                <Link><img src="./images/shuffle.png" alt="" /></Link>
+                <Link><img src="./images/Union.svg" alt="" /></Link>
+                <Link><img src="./images/mail.svg" alt="" /></Link>
+                <Link><img src="./images/shuffle.svg" alt="" /></Link>
             </div>
-
             <div className='toggle-btn' onClick={() => setMenuOpen(!menuOpen)}>
                 {
                     menuOpen ?
