@@ -1096,6 +1096,21 @@ footer .row {
   display: inline-flex;
   width: 100%;
 }
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.dropdown .btn:hover{
+  background-color: transparent;
+}
+.dropdown .btn:focus{
+  background-color: transparent;
+}
+.dropdown .btn.show, .btn:first-child:active{
+  background-color: transparent;
+}
 @media only screen and (max-width: 1013px) {
   .custom-slide-container{
     flex-direction: column;
