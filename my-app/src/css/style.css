@@ -108,7 +108,7 @@ h6 {
   color: #1f2e35;
   font-weight: 600;
   text-decoration: underline;
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .custom-btn {
@@ -147,7 +147,7 @@ h6 {
   align-items: center;
   text-decoration: none;
   color: #1f2e35;
-  gap: .3rem;
+  gap: 0.3rem;
   font-size: 1.125rem;
 }
 .header .custom-navbar a:hover {
@@ -583,7 +583,7 @@ footer .row {
   background-color: #ec323b;
   color: whitesmoke;
 }
-.our-product  .row{
+.our-product .row {
   display: flex;
   align-items: center;
 }
@@ -707,10 +707,6 @@ footer .row {
 .our-future img {
   max-width: 100%;
   object-fit: cover;
-}
-.our-future .img {
-  border: 0.1rem solid #ec323b;
-  padding: 0 1rem 1rem 1rem;
 }
 .our-future .title {
   font-size: 2rem;
@@ -1048,43 +1044,18 @@ footer .row {
   font-weight: 700;
 }
 
-.client-slider .carousel-inner .carousel-item img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: cover;
-  filter: contrast(100%);
-}
-.client-slider .carousel-inner .carousel-item .quatos {
-  width: auto;
-  height: 3rem;
-  max-width: 100%;
-  object-fit: cover;
-}
-.client-slider .carousel-inner .carousel-item p {
-  font-size: 1.5rem;
-  color: #373f41;
-}
-.client-slider .carousel-inner .carousel-item .little {
-  font-size: 1rem;
-  color: #30444e;
-}
-.client-slider .carousel-inner .carousel-item .row {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.client-slider .carousel-control-prev .carousel-control-prev-icon {
-  color: #ec323b !important;
-  background-color: #ec323b;
-}
-
 .client-slider .title {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2.25rem;
   font-weight: 500;
+}
+
+.client-slider .slider {
+  width: 100%;
+  height: 70vh;
+  background-color: #ec323b;
 }
 
 .partner-hero {
@@ -1099,6 +1070,49 @@ footer .row {
   font-size: 1.25rem;
 }
 
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+.slick-prev::before {
+  background-color: transparent;
+  color: #ec323b !important;
+}
+.slick-next::before {
+  background-color: transparent;
+  color: #ec323b !important;
+}
+
+
+.custom-slide-container{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  display: inline-flex;
+  width: 100%;
+}
+@media only screen and (max-width: 1013px) {
+  .custom-slide-container{
+    flex-direction: column;
+  }
+}
+.custom-slide-container .slide-img{
+  display: inline;
+}
+.custom-slide-container .slide-content{
+  display: inline;
+}
+.custom-slide-container .slide-content p{
+  font-size: 1.5rem;
+}
+.custom-slide-container .slide-content span{
+  font-size: 1rem;
+}
 .partner-line-up .card img {
   height: 7.625rem;
   width: 15.313rem;

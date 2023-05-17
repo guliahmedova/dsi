@@ -12,7 +12,7 @@ const Navbar = () => {
             </Link>
 
             <nav className={menuOpen ? "custom-navbar-mobile" : "custom-navbar"} onClick={() => setMenuOpen(false)}>
-                <NavLink to='services' className={({ isActive }) => (isActive ? 'linkActive' : '')}>Services</NavLink>
+                <NavLink to='services' className={({ isActive }) => (isActive ? 'linkActive' : "")}>Services</NavLink>
                 <NavLink to='product' className={({ isActive }) => isActive ? "linkActive" : ""}>Product</NavLink>
                 <NavLink to='technology' className={({ isActive }) => isActive ? "linkActive" : ""}>Technology</NavLink>
                 <NavLink to='ourteam' className={({ isActive }) => isActive ? "linkActive" : ""}>Our Team</NavLink>

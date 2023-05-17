@@ -12,6 +12,9 @@ import Client from './components/pages/Client';
 import About from './components/pages/About';
 import Partner from './components/pages/Partner';
 import OurTeam from './components/pages/OurTeam';
+import "../node_modules/video-react/dist/video-react.css";
+import "../node_modules/slick-carousel/slick/slick.css"
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />} >

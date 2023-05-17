@@ -1,4 +1,30 @@
+import Slider from "react-slick";
+import slides from "../../datas/sliderDatas";
+
 const ClientSlider = () => {
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
+    const slide = slides.map(item => {
+        return (
+            <div key={item.id} className="custom-slide-container">
+                <img className="slide-img" src={item.img} />
+                <div className="slide-content">
+                    <img className="my-3" src="./images/quote icon.svg" alt="" />
+                    <p>Est tation latine aliquip id, mea ad tale illud <br /> definitiones. Periculis omittantur 
+                        necessitatibus <br /> eum ad, pro eripuit
+                         minimum comprehensam ne, <br /> usu cu stet prompta reformidans.</p>
+                         <span>Connie Robertson at Google</span>
+                </div>
+            </div>
+        )
+    });
+
     return (
         <section className="client-slider py-5">
             <div className="container">
@@ -10,48 +36,9 @@ const ClientSlider = () => {
 
                 <div className="row">
                     <div className="col-lg-12">
-                        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-6 col-md-12 col-sm-12 mb-5 px-5">
-                                                <img className="d-block w-100" src="./images/image.png" alt="First slide" />
-                                            </div>
-                                            <div className="col-lg-6 col-md-12 col-sm-12">
-                                                <img className="quatos mb-3" src="./images/quote icon.png" alt="" />
-                                                <p>Est tation latine aliquip id, mea ad tale illud
-                                                    <br /> definitiones. Periculis omittantur necessitatibus <br /> eum ad, pro eripuit minimum comprehensam ne, <br /> usu cu stet prompta reformidans.</p>
-                                                <span className="little">Connie Robertson at Google</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className="carousel-item">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-6 mb-5 px-5">
-                                                <img className="d-block w-100" src="./images/cover (14).png" alt="First slide" />
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <img className="quatos mb-3" src="./images/quote icon.png" alt="" />
-                                                <p>Est tation latine aliquip id, mea ad tale illud
-                                                    <br /> definitiones. Periculis omittantur necessitatibus <br /> eum ad, pro eripuit minimum comprehensam ne, <br /> usu cu stet prompta reformidans.</p>
-                                                <span className="little">Connie Robertson at Google</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <img src="./images/chevron_big_left.png" alt="" />
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <img src="./images/right.png" alt="" />
-                            </a>
-                        </div>
+                        <Slider {...settings}>
+                            {slide}
+                        </Slider>
                     </div>
                 </div>
             </div>
