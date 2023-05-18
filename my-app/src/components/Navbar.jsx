@@ -5,7 +5,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
+    let activeStyle = {
+        color: "#1f2e35",
+        fontWeight: "500",
+        transition: " 0.5s all ease-in-out",
+    };
 
     return (
         <header className='header'>
@@ -14,25 +18,33 @@ const Navbar = () => {
             </Link>
 
             <nav className={menuOpen ? "custom-navbar-mobile" : "custom-navbar"} onClick={() => setMenuOpen(false)}>
-                <NavLink to='services' className={({ isActive }) => (isActive ? 'linkActive' : "")}>Services</NavLink>
-                <NavLink to='product' className={({ isActive }) => isActive ? "linkActive" : ""}>Product</NavLink>
-                <NavLink to='technology' className={({ isActive }) => isActive ? "linkActive" : ""}>Technology</NavLink>
+                <NavLink to='services' style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                }>Services</NavLink>
+                <NavLink to='product' style={({ isActive }) =>
+                    isActive ? activeStyle : undefined}>Product</NavLink>
+                <NavLink to='technology' style={({ isActive }) =>
+                    isActive ? activeStyle : undefined}>Technology</NavLink>
                 <Dropdown>
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        <NavLink to='about' className={({ isActive }) => isActive ? "linkActive" : ""}>
+                        <NavLink to='about' style={({ isActive }) =>
+                            isActive ? activeStyle : undefined}>
                             About <BsChevronDown className='down-icon' />
                         </NavLink>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">
-                            <NavLink to='ourteam' className={({ isActive }) => isActive ? "linkActive" : ""}>
+                            <NavLink to='ourteam' style={({ isActive }) =>
+                                isActive ? activeStyle : undefined}>
                                 Our Team
                             </NavLink>
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <NavLink to='client' className={({ isActive }) => isActive ? "linkActive" : ""}>Client<BsChevronDown className='down-icon' /></NavLink>
-                <NavLink to='partner' className={({ isActive }) => isActive ? "linkActive" : ""}>Partner</NavLink>
+                <NavLink to='client' style={({ isActive }) =>
+                    isActive ? activeStyle : undefined}>Client<BsChevronDown className='down-icon' /></NavLink>
+                <NavLink to='partner' style={({ isActive }) =>
+                    isActive ? activeStyle : undefined}>Partner</NavLink>
             </nav>
 
             <div className='icons'>
